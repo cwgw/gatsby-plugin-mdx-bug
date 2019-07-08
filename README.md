@@ -2,7 +2,7 @@ This repo exists to demonstrate a bug that presents when using `gatsby-remark-im
 
 __It seems as though the gatsby api calls (browser and ssr) made by `gatsby-remark-images` are not being run properly by `gatsby-plugin-mdx`.__
 
-As of c4a7c40d63538704f8964cdeb1df8a04285e9b21, `gatsby-remark-images` injects a style tag in the document head to style to the markup it generates. These styles were previously inlined.
+As of [`c4a7c40`](https://github.com/gatsbyjs/gatsby/commit/c4a7c40d63538704f8964cdeb1df8a04285e9b21), `gatsby-remark-images` injects a style tag in the document head to style to the markup it generates. These styles were previously inlined.
 
 This works as intended when transforming markdown with `gatsby-transformer-remark`, but does not when transforming MDX with `gatsby-plugin-mdx`.
 
